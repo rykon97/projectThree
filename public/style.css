@@ -235,9 +235,10 @@
   height: 100vh;
   width: 420px;
   background-color: #ffffff;
-  margin-left: auto;
+  margin-left: calc(100vw - 420px);
   display: flex;
   flex-direction: column;
+  transition-duration: 0.5s;
 }
 .cart__wrapper {
   padding: 0 40px;
@@ -272,6 +273,16 @@
   height: 100vh;
   width: 100vw;
   background-color: rgba(34, 34, 34, 0.4);
+  transition-duration: 0.5s;
+  opacity: 1;
+  visibility: visible;
+}
+.cart__overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.cart__overlay.hidden .cart {
+  margin-left: 100vw;
 }
 .cart__buttons {
   display: flex;
