@@ -719,10 +719,13 @@
   background-image: url(./img/icons/arrow.svg);
 }
 header .wrapper {
+  justify-content: space-between;
+  padding: 8px 0;
+}
+header .wrapper.home {
   padding: 8px 60px 8px 60px;
   margin: 0;
   width: calc(100% - 120px);
-  justify-content: space-between;
 }
 
 header.soft {
