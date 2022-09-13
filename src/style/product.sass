@@ -1,0 +1,176 @@
+@import './vars'
+
+.product
+    .info
+        padding-top: 55px
+    .preview
+        display: flex
+        justify-content: space-between
+        margin-bottom: 100px
+    .images
+        position: relative
+        display: flex
+        justify-content: space-between
+        margin-right: 50px
+    .main-image
+        width: 550px
+        height: 490px
+    .soft-image
+        width: 90px
+        &:not(:last-child)
+            margin-bottom: 8px
+    .list
+        display: flex
+        flex-direction: column
+        margin-right: 8px
+    .main-info
+        width: 500px
+    .breadcrumbs
+        width: 500px
+        display: flex
+        justify-content: space-between 
+    .links a
+        color: $head
+        font-weight: 500
+        font-size: 14px
+        line-height: 24px   
+    .buttons
+        padding-right: 15px 
+        a
+            color: $head
+            font-weight: 500
+            font-size: 14px
+            line-height: 24px
+            &:first-child
+                margin-right: 29px
+    .about p
+        color: $head
+        font-weight: 400
+        font-size: 14px
+        line-height: 24px
+    .name
+        color: $head
+        font-weight: 400
+        font-size: 26px
+        line-height: 35px
+    .cost
+        color: $head
+        font-weight: 500
+        font-size: 22px
+        line-height: 30px
+    .size
+        display: flex
+        justify-content: space-between 
+        align-items: center
+    .guide
+        color: $head
+        font-weight: 500
+        font-size: 13px
+        line-height: 24px
+        position: relative
+        &:hover
+            &::before
+                width: 90%
+        &::before
+            transition-duration: 0.4s
+            content: ''
+            bottom: -7px
+            position: absolute
+            width: 0
+            height: 2px
+            background-color: $head
+    .color
+        display: flex
+        margin-bottom: 30px 
+        h3
+            color: $head
+            font-weight: 500
+            font-size: 14px
+            line-height: 24px
+            margin-right: 39px
+    .size-wish
+        display: flex
+        justify-content: space-between 
+        h3
+            color: $head
+            font-weight: 500
+            font-size: 14px
+            line-height: 24px
+            margin-right: 50px 
+        a
+            color: $head
+            padding: 6px 13px 6px 13px
+            font-weight: 400
+            font-size: 13px
+            line-height: 17px
+            align-items: center
+            text-align: center
+            border: 1px solid $background-footer
+            transition-duration: 0.4s
+            &:not(:last-child)
+                margin-right: 8px
+            &:hover
+                color: $head
+                transition-duration: 0.4s
+                border-width: 2px
+                border-color: $head
+    .wish 
+        margin-top: 30px 
+        a
+            margin-top: 30px 
+            color: $head
+            font-weight: 500
+            font-size: 13px
+            line-height: 24px
+            position: relative
+            &:first-child
+                margin-right: 33px
+            &:hover
+                &::before
+                    width: 90%
+            &::before
+                transition-duration: 0.4s
+                content: ''
+                bottom: -7px
+                position: absolute
+                width: 0
+                height: 2px
+                background-color: $head
+    .add-to-cart 
+        input
+            padding: 5px 16px 
+            width: 60px
+            height: 45px
+            margin-right: 20px 
+        a
+            padding: 21px 90px 15px
+            background-color: $head
+            color: $text-white
+    .description
+        margin-bottom: 100px
+    .description-title
+        display: flex
+        justify-content: center
+        a
+            margin-right: 40px
+            font-weight: 500
+            font-size: 16px
+            line-height: 22px
+            color: $second
+            position: relative
+            transition-duration: 0.4s
+            &:hover
+                color: $head
+            &::before
+                transition-duration: 0.4s
+                content: ''
+                bottom: -7px
+                position: absolute
+                width: 0
+                height: 2px
+                background-color: $head
+            &:active
+                color: $head
+                &::before 
+                    width: 90%
+            
