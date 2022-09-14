@@ -25,6 +25,7 @@ gulp.task('serve', function() {
     // Задачи которые нужно отслеживать
     gulp.watch(['./src/style/**/*.sass', './src/style/**/*.css'], gulp.series(['sass']));
     gulp.watch('./public/**/*.html').on('change', browserSync.reload);
+    gulp.watch('./public/**/*.js').on('change', browserSync.reload);
 });
 
 gulp.task('default', gulp.series(['sass', 'serve']));
