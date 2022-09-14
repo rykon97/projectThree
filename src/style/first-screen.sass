@@ -47,7 +47,19 @@
         font-size: 14px
         line-height: 24px
         position: relative
+        transition-duration: 0.4s
+        &:hover
+            background-color: $head
+            color: $text-white
+            &::before
+                background-color: $text-white
+        &:active
+            background-color: $second
+            color: $text-white
+            &::before
+                background-color: $text-white
         &::before
+            transition-duration: 0.4s
             width: 20px
             content: ''
             top: 28px

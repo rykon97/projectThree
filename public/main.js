@@ -31,3 +31,20 @@ document.querySelectorAll(".best-selling__cart").forEach(item => {
         </div>`;
     });
 });
+
+document.querySelectorAll(".number").forEach(item => {
+    item.querySelector('.minus').addEventListener('click', () => {
+        const input = parseInt(item.querySelector('input').value);
+        if(input > 1) {
+            item.querySelector('input').value = input - 1;
+            
+        }
+    });
+    
+    item.querySelector('.plus').addEventListener('click', () => {
+        const input = parseInt(item.querySelector('input').value);
+        if(input < 100) {
+            item.querySelector('input').value = input + 1;
+        }
+    });
+});

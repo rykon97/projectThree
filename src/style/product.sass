@@ -90,6 +90,7 @@
             margin-right: 39px
     .size-wish
         display: flex
+        align-items: center
         justify-content: space-between 
         h3
             color: $head
@@ -109,10 +110,9 @@
             transition-duration: 0.4s
             &:not(:last-child)
                 margin-right: 8px
-            &:hover
+            &.active
                 color: $head
-                transition-duration: 0.4s
-                border-width: 2px
+                border-width: 1px
                 border-color: $head
     .wish 
         margin-top: 30px 
@@ -136,16 +136,13 @@
                 width: 0
                 height: 2px
                 background-color: $head
-    .add-to-cart 
+    .add-to-cart
+        display: inline-flex
         input
             padding: 5px 16px 
             width: 60px
             height: 45px
             margin-right: 20px 
-        a
-            padding: 21px 90px 15px
-            background-color: $head
-            color: $text-white
     .description
         margin-bottom: 100px
     .description-title

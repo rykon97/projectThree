@@ -1,5 +1,8 @@
 @import './vars'
-    
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button 
+    -webkit-appearance: none
+ 
 .input
     position: relative
     input
@@ -24,3 +27,23 @@
         left: 22px
         top: 14px
         font-size: 14px
+
+.number
+    position: relative
+    input[type="number"]
+        border: 2px solid $background-footer
+        text-align: center
+        padding: 5px 43px!important
+        width: 30px!important
+        -moz-appearance: textfield
+    .plus
+        color: $second
+        position: absolute
+        right: 21px
+        top: 19px
+        margin-right: 21px
+    .minus
+        color: $second
+        position: absolute
+        left: 21px
+        top: 19px
