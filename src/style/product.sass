@@ -145,6 +145,8 @@
             margin-right: 20px 
     .description
         margin-bottom: 100px
+        width: 930px
+        padding-left: 155px 
     .description-title
         display: flex
         justify-content: center
@@ -156,8 +158,6 @@
             color: $second
             position: relative
             transition-duration: 0.4s
-            &:hover
-                color: $head
             &::before
                 transition-duration: 0.4s
                 content: ''
@@ -169,5 +169,176 @@
             &:active
                 color: $head
                 &::before 
+                    transition-duration: 0.4s
+                    content: ''
+                    bottom: -7px
+                    position: absolute
                     width: 90%
-            
+                    height: 2px
+                    background-color: $head
+    .main-description
+        padding-top: 55px 
+        color: $head
+        h1
+            font-weight: 500
+            font-size: 16px
+            line-height: 22px
+        p
+            font-weight: 400
+            font-size: 14px
+            line-height: 24px
+    .soft-description
+        margin-top: 40px 
+        display: flex
+        justify-content: space-between 
+        h1
+            font-weight: 500
+            font-size: 16px
+            line-height: 22px
+        ul
+            margin-left: -20px 
+            margin-top: 3px 
+            font-weight: 400
+            font-size: 14px
+            line-height: 24px
+        ol
+            margin-left: -20px 
+            margin-top: 3px 
+            font-weight: 400
+            font-size: 14px
+            line-height: 24px  
+    .lining
+        margin-top: 40px    
+        h1
+            font-weight: 500
+            font-size: 16px
+            line-height: 22px
+        p
+            font-weight: 400
+            font-size: 14px
+            line-height: 24px
+
+.related-products
+    padding-bottom: 100px
+    h1
+        margin-bottom: 34px
+        font-weight: 400
+        font-size: 16px
+        line-height: 21px
+    .products-cloth-options a    
+        margin-right: 40px 
+        color: $second
+        position: relative
+        transition-duration: 0.4s
+        &.active
+            color: $head
+            &::before
+                transition-duration: 0.4s
+                content: ''
+                bottom: -7px
+                position: absolute
+                width: 90%
+                height: 2px
+                background-color: $head
+        &:hover
+            color: $head
+            .products-cloth-options a.active
+                color: $second
+            &::before
+                width: 90%
+        &::before
+            transition-duration: 0.4s
+            content: ''
+            bottom: -7px
+            position: absolute
+            width: 0
+            height: 2px
+            background-color: $head
+        &:last-child
+            margin: 0
+    .products-container
+        display: flex
+        justify-content: space-between
+        margin-top: 50px 
+    .products-item
+        width: 280px
+    .products-image
+        width: 280px
+        height: 340px
+        position: relative
+        overflow: hidden
+        &:hover .products-cart
+            bottom: 0
+        img
+            height: 340px
+            width: 280px
+    .this-products-info
+        width: 330px
+        position: relative
+    .products-like
+        position: absolute
+        color: $head
+        background-color: $text-white
+        top: -10px
+        right: 40px
+        border-radius: 20px
+        padding: 13px 12px 11px 12px
+        &:active
+            background-color: $red
+        &:hover
+            color: $red
+            &:active
+                color: $text-white
+    .products-tip
+        color: $second
+        font-weight: 400
+        font-size: 14px
+        line-height: 24px
+        margin-bottom: 0
+    .products-name
+        margin-top: 0
+        margin-bottom: 0 
+        color: $head
+        font-weight: 400
+        font-size: 16px
+        line-height: 21px
+    .products-cost
+        margin-top: 8px
+        color: $second
+    .products-cart
+        padding: 16px 0
+        background-color: $head
+        color: $text-white
+        display: flex
+        justify-content: space-around
+        position: absolute
+        width: 100%
+        bottom: -50.4px
+        left: 0
+        transition-duration: 0.4s
+    .products-new
+        font-weight: 400
+        font-size: 14px
+        line-height: 24px
+        position: absolute
+        color: $head
+        background-color: $text-white
+        top: 20px
+        left: 0
+        width: 55px
+        height: 30px
+        padding-top: 5px 
+        text-align: center
+    .products-discont
+        font-weight: 400
+        font-size: 14px
+        line-height: 24px
+        position: absolute
+        color: $text-white
+        background-color: $red
+        top: 20px
+        left: 0
+        width: 55px
+        height: 30px
+        padding-top: 5px 
+        text-align: center

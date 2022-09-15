@@ -1266,6 +1266,8 @@ a {
 }
 .product .description {
   margin-bottom: 100px;
+  width: 930px;
+  padding-left: 155px;
 }
 .product .description-title {
   display: flex;
@@ -1280,9 +1282,6 @@ a {
   position: relative;
   transition-duration: 0.4s;
 }
-.product .description-title a:hover {
-  color: #222222;
-}
 .product .description-title a::before {
   transition-duration: 0.4s;
   content: "";
@@ -1296,6 +1295,214 @@ a {
   color: #222222;
 }
 .product .description-title a:active::before {
+  transition-duration: 0.4s;
+  content: "";
+  bottom: -7px;
+  position: absolute;
   width: 90%;
+  height: 2px;
+  background-color: #222222;
+}
+.product .main-description {
+  padding-top: 55px;
+  color: #222222;
+}
+.product .main-description h1 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+.product .main-description p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.product .soft-description {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.product .soft-description h1 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+.product .soft-description ul {
+  margin-left: -20px;
+  margin-top: 3px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.product .soft-description ol {
+  margin-left: -20px;
+  margin-top: 3px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.product .lining {
+  margin-top: 40px;
+}
+.product .lining h1 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+.product .lining p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.related-products {
+  padding-bottom: 100px;
+}
+.related-products h1 {
+  margin-bottom: 34px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.related-products .products-cloth-options a {
+  margin-right: 40px;
+  color: #767676;
+  position: relative;
+  transition-duration: 0.4s;
+}
+.related-products .products-cloth-options a.active {
+  color: #222222;
+}
+.related-products .products-cloth-options a.active::before {
+  transition-duration: 0.4s;
+  content: "";
+  bottom: -7px;
+  position: absolute;
+  width: 90%;
+  height: 2px;
+  background-color: #222222;
+}
+.related-products .products-cloth-options a:hover {
+  color: #222222;
+}
+.related-products .products-cloth-options a:hover .products-cloth-options a.active {
+  color: #767676;
+}
+.related-products .products-cloth-options a:hover::before {
+  width: 90%;
+}
+.related-products .products-cloth-options a::before {
+  transition-duration: 0.4s;
+  content: "";
+  bottom: -7px;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #222222;
+}
+.related-products .products-cloth-options a:last-child {
+  margin: 0;
+}
+.related-products .products-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.related-products .products-item {
+  width: 280px;
+}
+.related-products .products-image {
+  width: 280px;
+  height: 340px;
+  position: relative;
+  overflow: hidden;
+}
+.related-products .products-image:hover .products-cart {
+  bottom: 0;
+}
+.related-products .products-image img {
+  height: 340px;
+  width: 280px;
+}
+.related-products .this-products-info {
+  width: 330px;
+  position: relative;
+}
+.related-products .products-like {
+  position: absolute;
+  color: #222222;
+  background-color: #ffffff;
+  top: -10px;
+  right: 40px;
+  border-radius: 20px;
+  padding: 13px 12px 11px 12px;
+}
+.related-products .products-like:active {
+  background-color: #D6001C;
+}
+.related-products .products-like:hover {
+  color: #D6001C;
+}
+.related-products .products-like:hover:active {
+  color: #ffffff;
+}
+.related-products .products-tip {
+  color: #767676;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+.related-products .products-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #222222;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.related-products .products-cost {
+  margin-top: 8px;
+  color: #767676;
+}
+.related-products .products-cart {
+  padding: 16px 0;
+  background-color: #222222;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  bottom: -50.4px;
+  left: 0;
+  transition-duration: 0.4s;
+}
+.related-products .products-new {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  position: absolute;
+  color: #222222;
+  background-color: #ffffff;
+  top: 20px;
+  left: 0;
+  width: 55px;
+  height: 30px;
+  padding-top: 5px;
+  text-align: center;
+}
+.related-products .products-discont {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  position: absolute;
+  color: #ffffff;
+  background-color: #D6001C;
+  top: 20px;
+  left: 0;
+  width: 55px;
+  height: 30px;
+  padding-top: 5px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
