@@ -48,3 +48,9 @@ document.querySelectorAll(".number").forEach(item => {
         }
     });
 });
+
+document.querySelectorAll(".size-wish").forEach(item => {
+    item.querySelectorAll('a').addEventListener('click', (e) => {
+        
+    });
+});
