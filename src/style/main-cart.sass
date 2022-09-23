@@ -107,5 +107,92 @@
             margin-right: 20px 
     .close
         margin-left: 50px 
+    .button-case
+        margin-top: 32px
+        display: flex
+        justify-content: space-between
+    .updata-card .button
+        color: $head
+        width: 200px 
+        background-color: $background-footer
+        &:hover
+            color: $text-white
+            background-color: $third
+    .coupon-apply 
+        width: 300px
+        input
+            height: 60px
+            &:focus, &:not(:placeholder-shown)
+                border-color: $head
+                ~ label
+                    top: -8px
+                    left: 170px 
+                    padding: 0 4px
+        label
+            color: $head 
+            left: 170px 
+            top: 23px
+            font-size: 14px
+    .subtotal
+        display: flex
+        border-bottom: 1px solid $background-footer
+        h3
+            margin-top: 0 
+            color: $head
+            width: 300px
+            font-weight: 500
+            font-size: 14px
+            line-height: 24px
+        span
+            margin-right: 100px
+            color: $head
+            font-weight: 500
+            font-size: 14px
+            line-height: 24px
+    .shipping
+        margin-top: 15px
+        display: flex
+        border-bottom: 1px solid $background-footer
+        margin-bottom: 23px
+        h3
+            margin-top: 0 
+            color: $head
+            width: 300px
+            font-weight: 500
+            font-size: 14px
+            line-height: 24px
+    .checkbox
+        margin-bottom: 14px
+        &:not(:first-child)
+            margin-top: 20px 
+    .address-change 
+        margin-top: 0px
+        margin-bottom: 23px
+        span
+            color: $head
+            font-weight: 400
+            font-size: 14px
+            line-height: 24px
+        a
+            color: $head
+            font-weight: 500
+            font-size: 14px
+            line-height: 24px
+            position: relative
+            transition-duration: 0.4s
+            &::before
+                transition-duration: 0.4s
+                width: 0
+                content: ''
+                left: -93px
+                bottom: -7px
+                position: absolute
+                height: 2px
+                background-color: $head
+            &:hover
+                &::before    
+                    width: 110px
+
+
         
     

@@ -1290,6 +1290,138 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 .main-cart .close {
   margin-left: 50px;
 }
+.main-cart .button-case {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-cart .updata-card .button {
+  color: #222222;
+  width: 200px;
+  background-color: #E4E4E4;
+}
+.main-cart .updata-card .button:hover {
+  color: #ffffff;
+  background-color: #B9A16B;
+}
+.main-cart .coupon-apply {
+  width: 300px;
+}
+.main-cart .coupon-apply input {
+  height: 60px;
+}
+.main-cart .coupon-apply input:not(:-moz-placeholder-shown) {
+  border-color: #222222;
+}
+.main-cart .coupon-apply input:not(:-ms-input-placeholder) {
+  border-color: #222222;
+}
+.main-cart .coupon-apply input:focus, .main-cart .coupon-apply input:not(:placeholder-shown) {
+  border-color: #222222;
+}
+.main-cart .coupon-apply input:not(:-moz-placeholder-shown) ~ label {
+  top: -8px;
+  left: 170px;
+  padding: 0 4px;
+}
+.main-cart .coupon-apply input:not(:-ms-input-placeholder) ~ label {
+  top: -8px;
+  left: 170px;
+  padding: 0 4px;
+}
+.main-cart .coupon-apply input:focus ~ label, .main-cart .coupon-apply input:not(:placeholder-shown) ~ label {
+  top: -8px;
+  left: 170px;
+  padding: 0 4px;
+}
+.main-cart .coupon-apply label {
+  color: #222222;
+  left: 170px;
+  top: 23px;
+  font-size: 14px;
+}
+.main-cart .subtotal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #E4E4E4;
+}
+.main-cart .subtotal h3 {
+  margin-top: 0;
+  color: #222222;
+  width: 300px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.main-cart .subtotal span {
+  margin-right: 100px;
+  color: #222222;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.main-cart .shipping {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #E4E4E4;
+  margin-bottom: 23px;
+}
+.main-cart .shipping h3 {
+  margin-top: 0;
+  color: #222222;
+  width: 300px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.main-cart .checkbox {
+  margin-bottom: 14px;
+}
+.main-cart .checkbox:not(:first-child) {
+  margin-top: 20px;
+}
+.main-cart .address-change {
+  margin-top: 0px;
+  margin-bottom: 23px;
+}
+.main-cart .address-change span {
+  color: #222222;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.main-cart .address-change a {
+  color: #222222;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+.main-cart .address-change a::before {
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  width: 0;
+  content: "";
+  left: -93px;
+  bottom: -7px;
+  position: absolute;
+  height: 2px;
+  background-color: #222222;
+}
+.main-cart .address-change a:hover::before {
+  width: 110px;
+}
 body {
   font-family: "sofia-pro", sans-serif;
   -webkit-font-smoothing: antialiased;
