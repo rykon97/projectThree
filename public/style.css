@@ -1215,18 +1215,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-.main-cart .shoping-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 320px;
-  padding: 41px 38px;
-  border: 1px solid #222222;
-}
 .main-cart .bag-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1344,7 +1332,30 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   top: 23px;
   font-size: 14px;
 }
+.main-cart .shoping-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 320px;
+  height: 380px;
+  padding: 38px 41px;
+  border: 1px solid #222222;
+  margin-bottom: 20px;
+}
+.main-cart .shoping-info h1 {
+  color: #222222;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
 .main-cart .subtotal {
+  margin-top: 33px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1421,6 +1432,51 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 }
 .main-cart .address-change a:hover::before {
   width: 110px;
+}
+.main-cart .vat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #E4E4E4;
+  margin-bottom: 14px;
+}
+.main-cart .vat h3 {
+  margin-top: 0;
+  color: #222222;
+  width: 185px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.main-cart .vat span {
+  text-align: left;
+  color: #222222;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.main-cart .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-cart .total h3 {
+  margin-top: 0;
+  color: #222222;
+  width: 185px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.main-cart .total span {
+  text-align: left;
+  color: #222222;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.main-cart .checkout a {
+  width: 404px;
 }
 body {
   font-family: "sofia-pro", sans-serif;

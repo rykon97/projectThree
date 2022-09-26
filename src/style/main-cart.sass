@@ -56,12 +56,6 @@
     .shoping-bag
         margin-right: 60px
         flex-grow: 1
-    .shoping-info
-        display: flex
-        flex-direction: column
-        width: 320px
-        padding: 41px 38px
-        border: 1px solid $head
     .bag-info
         display: flex
         justify-content: space-between
@@ -133,7 +127,23 @@
             left: 170px 
             top: 23px
             font-size: 14px
+    .shoping-info
+        display: flex
+        flex-direction: column
+        width: 320px
+        height: 380px
+        padding: 38px 41px 
+        border: 1px solid $head
+        margin-bottom: 20px
+        h1
+            color: $head
+            margin-top: 0
+            margin-bottom: 0
+            font-weight: 500
+            font-size: 16px
+            line-height: 22px
     .subtotal
+        margin-top: 33px 
         display: flex
         border-bottom: 1px solid $background-footer
         h3
@@ -192,6 +202,40 @@
             &:hover
                 &::before    
                     width: 110px
+    .vat
+        display: flex
+        border-bottom: 1px solid $background-footer
+        margin-bottom: 14px
+        h3
+            margin-top: 0 
+            color: $head
+            width: 185px
+            font-weight: 500
+            font-size: 14px
+            line-height: 24px
+        span
+            text-align: left
+            color: $head
+            font-weight: 400
+            font-size: 14px
+            line-height: 24px
+    .total
+        display: flex
+        h3
+            margin-top: 0 
+            color: $head
+            width: 185px
+            font-weight: 500
+            font-size: 14px
+            line-height: 24px
+        span
+            text-align: left
+            color: $head
+            font-weight: 400
+            font-size: 14px
+            line-height: 24px
+    .checkout a
+        width: 404px
 
 
         
