@@ -158,6 +158,16 @@
             color: $second
             position: relative
             transition-duration: 0.4s
+            &.active
+                color: $head
+                &::before 
+                    transition-duration: 0.4s
+                    content: ''
+                    bottom: -7px
+                    position: absolute
+                    width: 90%
+                    height: 2px
+                    background-color: $head
             &::before
                 transition-duration: 0.4s
                 content: ''

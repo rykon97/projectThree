@@ -1913,6 +1913,20 @@ a {
        -o-transition-duration: 0.4s;
           transition-duration: 0.4s;
 }
+.product .description-title a.active {
+  color: #222222;
+}
+.product .description-title a.active::before {
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  content: "";
+  bottom: -7px;
+  position: absolute;
+  width: 90%;
+  height: 2px;
+  background-color: #222222;
+}
 .product .description-title a::before {
   -webkit-transition-duration: 0.4s;
        -o-transition-duration: 0.4s;

@@ -33,7 +33,9 @@ document.querySelectorAll(".best-selling__cart").forEach(item => {
 });
 
 document.querySelectorAll(".number").forEach(item => {
-    item.querySelector('.minus').addEventListener('click', () => {
+    item.querySelector('.minus').addEventListener('click', (e) => {
+        e.preventDefault();
+
         const input = parseInt(item.querySelector('input').value);
         if(input > 1) {
             item.querySelector('input').value = input - 1;
@@ -41,7 +43,9 @@ document.querySelectorAll(".number").forEach(item => {
         }
     });
     
-    item.querySelector('.plus').addEventListener('click', () => {
+    item.querySelector('.plus').addEventListener('click', (e) => {
+        e.preventDefault();
+
         const input = parseInt(item.querySelector('input').value);
         if(input < 100) {
             item.querySelector('input').value = input + 1;
@@ -49,8 +53,12 @@ document.querySelectorAll(".number").forEach(item => {
     });
 });
 
-document.querySelectorAll(".size-wish").forEach(item => {
-    item.querySelectorAll('a').addEventListener('click', (e) => {
+document.querySelectorAll('.size-wish a').forEach((item, index) => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
         
+        document.querySelector('.size-wish a.active').classList.remove('active');
+        document.querySelector('[name="size"]').value = index + 1;
+        item.classList.add('active');
     });
 });
