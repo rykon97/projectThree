@@ -6,6 +6,8 @@ const calculateSubtotal = () => {
     });
 
     document.querySelector('.subtotal span').innerHTML = '$' + subtotal;
+    document.querySelector('.vat span').innerHTML = '$' + Math.floor(subtotal * 0.2);
+    document.querySelector('.total span').innerHTML = '$' + (subtotal + Math.floor(subtotal * 0.2));
 };
 
 
