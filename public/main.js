@@ -74,3 +74,11 @@ document.querySelectorAll('.description-title a').forEach((item, index) => {
         document.querySelectorAll('.discription-container')[index].classList.add('active');
     });
 });
+
+document.querySelectorAll('.shoping-conteiner a.close').forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        e.target.parentNode.remove()
+    })
+});
