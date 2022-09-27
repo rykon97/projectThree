@@ -56,9 +56,21 @@ document.querySelectorAll(".number").forEach(item => {
 document.querySelectorAll('.size-wish a').forEach((item, index) => {
     item.addEventListener('click', (e) => {
         e.preventDefault();
-        
+
         document.querySelector('.size-wish a.active').classList.remove('active');
         document.querySelector('[name="size"]').value = index + 1;
         item.classList.add('active');
+    });
+});
+
+document.querySelectorAll('.description-title a').forEach((item, index) => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        document.querySelector('.description-title a.active').classList.remove('active');
+        item.classList.add('active');
+
+        document.querySelector('.discription-container.active').classList.remove('active');
+        document.querySelectorAll('.discription-container')[index].classList.add('active');
     });
 });

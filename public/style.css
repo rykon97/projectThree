@@ -2007,6 +2007,12 @@ a {
   font-size: 14px;
   line-height: 24px;
 }
+.product .discription-container {
+  display: none;
+}
+.product .discription-container.active {
+  display: block;
+}
 
 .related-products {
   padding-bottom: 100px;
