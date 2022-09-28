@@ -114,14 +114,16 @@
             background-color: $third
     .coupon-apply 
         width: 300px
+        position: relative
         input
             height: 60px
-            &:focus, &:not(:placeholder-shown)
-                border-color: $head
-                ~ label
-                    top: -8px
-                    left: 170px 
-                    padding: 0 4px
+        a
+            position: absolute
+            right: 19px
+            top: 20px 
+            color: $head
+            &:hover
+                color: $third
         label
             color: $head 
             left: 170px 
@@ -236,7 +238,3 @@
             line-height: 24px
     .checkout a
         width: 404px
-
-
-        
-    
