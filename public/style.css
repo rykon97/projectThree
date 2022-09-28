@@ -1722,6 +1722,242 @@ a {
   line-height: 24px;
   color: #222222;
 }
+.order-received .shoping-step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1200px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #E4E4E4;
+  margin-bottom: 50px;
+}
+.order-received .steps {
+  width: 420px;
+}
+.order-received .steps-active {
+  position: relative;
+  width: 420px;
+}
+.order-received .steps-active::before {
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  width: 100%;
+  content: "";
+  bottom: -12px;
+  position: absolute;
+  height: 2px;
+  background-color: #222222;
+}
+.order-received .steps-active h3 {
+  color: #222222 !important;
+}
+.order-received .step-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.order-received .step-name h3 {
+  margin-bottom: 0;
+  color: #767676;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.order-received .step-name h3:first-child {
+  margin-right: 12px;
+}
+.order-received .step-info {
+  padding-left: 30px;
+  padding-top: -30px;
+}
+.order-received .step-info span {
+  margin-top: 0px;
+  color: #767676;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+}
+.order-received .complete {
+  margin-bottom: 36px;
+}
+.order-received .complete img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+  margin-bottom: 19px;
+}
+.order-received .complete h1 {
+  color: #222222;
+  text-align: center;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 47px;
+  margin-bottom: 0;
+}
+.order-received .complete span {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #767676;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.order-received .order-info {
+  padding: 41px 200px 41px 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px dashed #222222;
+  margin-bottom: 36px;
+}
+.order-received .order-info h4 {
+  color: #767676;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+.order-received .order-info span {
+  color: #222222;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+.order-received .order-details {
+  padding: 38px 41px;
+  border: 1px solid #222222;
+  margin-bottom: 100px;
+}
+.order-received .order-details h2 {
+  color: #222222;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+.order-received .order-details h3 {
+  color: #222222;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.order-received .colontitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 13px;
+  margin-top: 33px;
+  border-bottom: 1px solid #E4E4E4;
+}
+.order-received .colontitle h3 {
+  color: #222222;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.order-received .bag {
+  border-bottom: 1px solid #E4E4E4;
+}
+.order-received .bag h3 {
+  color: #222222;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.order-received .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 13px;
+  margin-top: 13px;
+}
+.order-received .item span {
+  color: #767676;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.order-received .subtotal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 13px;
+  border-bottom: 1px solid #E4E4E4;
+}
+.order-received .shipping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 13px;
+  border-bottom: 1px solid #E4E4E4;
+}
+.order-received .shipping h3 {
+  margin-top: 0;
+}
+.order-received .shipping span {
+  color: #222222;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+.order-received .vat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #E4E4E4;
+}
+.order-received .vat h3 {
+  margin-top: 0;
+}
+.order-received .payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #E4E4E4;
+}
+.order-received .payment h3 {
+  margin-top: 13;
+}
+.order-received .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.order-received .total h3 {
+  margin-bottom: 0;
+}
 .product .info {
   padding-top: 55px;
 }
